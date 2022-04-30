@@ -1,0 +1,10 @@
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\Alvarez.Gonzalo.2A.TP2\TP-02\TP-02\bin\Debug\TP-02.exe.config
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\Alvarez.Gonzalo.2A.TP2\TP-02\TP-02\bin\Debug\TP-02.exe
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\Alvarez.Gonzalo.2A.TP2\TP-02\TP-02\bin\Debug\TP-02.pdb
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\Alvarez.Gonzalo.2A.TP2\TP-02\TP-02\bin\Debug\Entidades.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\Alvarez.Gonzalo.2A.TP2\TP-02\TP-02\bin\Debug\Entidades.pdb
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\Alvarez.Gonzalo.2A.TP2\TP-02\TP-02\obj\Debug\AlvarezGonzalo - TP2.csproj.AssemblyReference.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\Alvarez.Gonzalo.2A.TP2\TP-02\TP-02\obj\Debug\AlvarezGonzalo - TP2.csproj.CoreCompileInputs.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\Alvarez.Gonzalo.2A.TP2\TP-02\TP-02\obj\Debug\AlvarezGonzalo - TP2.csproj.CopyComplete
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\Alvarez.Gonzalo.2A.TP2\TP-02\TP-02\obj\Debug\TP-02.exe
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\Alvarez.Gonzalo.2A.TP2\TP-02\TP-02\obj\Debug\TP-02.pdb
