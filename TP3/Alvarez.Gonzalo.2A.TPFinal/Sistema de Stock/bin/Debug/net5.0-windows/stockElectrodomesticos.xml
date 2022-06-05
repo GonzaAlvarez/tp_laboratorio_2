@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfElectrodomestico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Electrodomestico>
+    <Id>1</Id>
+    <Precio>30000</Precio>
+    <Marca>Samsung</Marca>
+    <TipoElectrodomestico>Celular</TipoElectrodomestico>
+  </Electrodomestico>
+  <Electrodomestico>
+    <Id>2</Id>
+    <Precio>50000</Precio>
+    <Marca>LG</Marca>
+    <TipoElectrodomestico>Televisor</TipoElectrodomestico>
+  </Electrodomestico>
+</ArrayOfElectrodomestico>
