@@ -16,6 +16,7 @@ namespace Sistema_de_Stock
     {
         #region Atributos
         private FrmCargarProducto frmCargarProducto;
+        private FrmVenderProducto frmVenderProducto;
         private Stock<Producto> stock = new Stock<Producto>(100);
         private SerializadorXML_JSON<List<Electrodomestico>> serializadorXmlElectrodomestico;
         private SerializadorXML_JSON<List<Instrumento>> serializadorXmlInstrumento;
@@ -66,21 +67,40 @@ namespace Sistema_de_Stock
         /// </summary>
         private void Actualizar()
         {
-            dtStock.Rows.Clear();
-            foreach (Producto p in this.stock.Productos)
+            try
             {
-                if (p is Instrumento)
+                dtStock.Rows.Clear();
+                foreach (Producto p in this.stock.Productos)
                 {
-                    Instrumento i = (Instrumento)p;
-                    string[] i_array = { i.Id.ToString(), i.Marca, i.TipoInstrumento, i.Precio.ToString() };
-                    dtStock.Rows.Add(i_array);
+                    if (p is Instrumento)
+                    {
+                        DataGridViewRow fila = new DataGridViewRow();
+                        fila.CreateCells(dtStock);
+                        Instrumento i = (Instrumento)p;
+                        fila.Cells[0].Value = i.Id;
+                        fila.Cells[1].Value = i.Marca;
+                        fila.Cells[2].Value = i.TipoInstrumento;
+                        fila.Cells[3].Value = i.Precio;
+                        dtStock.Rows.Add(fila);
+                        dtStock.Sort(dtStock.Columns[0], ListSortDirection.Ascending);
+                    }
+                    if (p is Electrodomestico)
+                    {
+                        DataGridViewRow fila = new DataGridViewRow();
+                        fila.CreateCells(dtStock);
+                        Electrodomestico e = (Electrodomestico)p;
+                        fila.Cells[0].Value = e.Id;
+                        fila.Cells[1].Value = e.Marca;
+                        fila.Cells[2].Value = e.TipoElectrodomestico;
+                        fila.Cells[3].Value = e.Precio;
+                        dtStock.Rows.Add(fila);
+                        dtStock.Sort(dtStock.Columns[0], ListSortDirection.Ascending);
+                    }
                 }
-                if (p is Electrodomestico)
-                {
-                    Electrodomestico e = (Electrodomestico)p;
-                    string[] e_array = { e.Id.ToString(), e.Marca, e.TipoElectrodomestico, e.Precio.ToString() };
-                    dtStock.Rows.Add(e_array);
-                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
             }
         }
 
@@ -89,31 +109,43 @@ namespace Sistema_de_Stock
             ETipoInstrumento tipoInstrumento;
             ETipoElectrodomestico tipoElectrodomestico;
 
-            foreach (Producto p in this.stock.Productos)
+            try
             {
-                Instrumento i;
-                Electrodomestico electrodomestico;
+                int id = Convert.ToInt32(dtStock.CurrentRow.Cells["id"].Value);
 
-                if (p is Instrumento)
+                foreach (Producto p in this.stock.Productos)
                 {
-                    Instrumento instrumento = (Instrumento)p;
-                    tipoInstrumento = instrumento.TipoInstrumento == "Guitarra" ? ETipoInstrumento.Guitarra : ETipoInstrumento.Saxo;
-                    i = new Instrumento(instrumento.Id, instrumento.Precio, instrumento.Marca, tipoInstrumento);
-                    this.stock.Productos.Remove(i);
-                    dtStock.Rows.Remove(dtStock.CurrentRow);
-                    break;
+                    Instrumento i;
+                    Electrodomestico electrodomestico;
+                    if(p.Id == id)
+                    {
+                        if (p is Instrumento)
+                        {
+                            Instrumento instrumento = (Instrumento)p;
+                            tipoInstrumento = instrumento.TipoInstrumento == "Guitarra" ? ETipoInstrumento.Guitarra : ETipoInstrumento.Saxo;
+                            i = new Instrumento(instrumento.Id, instrumento.Precio, instrumento.Marca, tipoInstrumento);
+                            this.stock.Productos.Remove(i);
+                            dtStock.Rows.Remove(dtStock.CurrentRow);
+                            break;
+                        }
+                        if (p is Electrodomestico)
+                        {
+                            DataGridViewRow fila = new DataGridViewRow();
+                            Electrodomestico elect = (Electrodomestico)p;
+                            tipoElectrodomestico = elect.TipoElectrodomestico == "Celular" ? ETipoElectrodomestico.Celular :
+                                elect.TipoElectrodomestico == "Televisor" ? ETipoElectrodomestico.Televisor :
+                                elect.TipoElectrodomestico == "Lavarropa" ? ETipoElectrodomestico.Lavarropa : ETipoElectrodomestico.Heladera;
+                            electrodomestico = new Electrodomestico(elect.Id, elect.Precio, elect.Marca, tipoElectrodomestico);
+                            this.stock.Productos.Remove(electrodomestico);
+                            dtStock.Rows.Remove(dtStock.CurrentRow);
+                            break;
+                        }
+                    }
                 }
-                if (p is Electrodomestico)
-                {
-                    Electrodomestico elect = (Electrodomestico)p;
-                    tipoElectrodomestico = elect.TipoElectrodomestico == "Celular" ? ETipoElectrodomestico.Celular :
-                        elect.TipoElectrodomestico == "Televisor" ? ETipoElectrodomestico.Televisor :
-                        elect.TipoElectrodomestico == "Lavarropa" ? ETipoElectrodomestico.Lavarropa : ETipoElectrodomestico.Heladera;
-                    electrodomestico = new Electrodomestico(elect.Id, elect.Precio, elect.Marca, tipoElectrodomestico);
-                    this.stock.Productos.Remove(electrodomestico);
-                    dtStock.Rows.Remove(dtStock.CurrentRow);
-                    break;
-                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
             }
         }
 
@@ -122,35 +154,59 @@ namespace Sistema_de_Stock
             ETipoInstrumento tipoInstrumento;
             ETipoElectrodomestico tipoElectrodomestico;
 
-            foreach (Producto p in this.stock.Productos)
+            try
             {
-                Instrumento i;
-                Electrodomestico electrodomestico;
+                int id = Convert.ToInt32(dtStock.CurrentRow.Cells["id"].Value);
+                foreach (Producto p in this.stock.Productos)
+                {
+                    Instrumento i;
+                    Electrodomestico electrodomestico;
+                    if (p.Id == id)
+                    {
+                        if (p is Instrumento)
+                        {
+                            Instrumento instrumento = (Instrumento)p;
+                            tipoInstrumento = instrumento.TipoInstrumento == "Guitarra" ? ETipoInstrumento.Guitarra : ETipoInstrumento.Saxo;
+                            i = new Instrumento(instrumento.Id, instrumento.Precio, instrumento.Marca, tipoInstrumento);
+                            this.frmVenderProducto = new FrmVenderProducto(i);
+                            frmVenderProducto.ShowDialog();
 
-                if (p is Instrumento)
-                {
-                    Instrumento instrumento = (Instrumento)p;
-                    tipoInstrumento = instrumento.TipoInstrumento == "Guitarra" ? ETipoInstrumento.Guitarra : ETipoInstrumento.Saxo;
-                    i = new Instrumento(instrumento.Id, instrumento.Precio, instrumento.Marca, tipoInstrumento);
-                    this.Recaudacion += i.Precio;
-                    lblRecaudacion.Text = $"Recaudacion: ${this.recaudacion}";
-                    this.stock.Productos.Remove(i);
-                    dtStock.Rows.Remove(dtStock.CurrentRow);
-                    break;
+                            if (this.frmVenderProducto.DialogResult == DialogResult.OK)
+                            {
+                                this.Recaudacion += i.Precio;
+                                lblRecaudacion.Text = $"Recaudacion: ${this.recaudacion}";
+                                this.stock.Productos.Remove(i);
+                                dtStock.Rows.Remove(dtStock.CurrentRow);
+                            }
+
+                            break;
+                        }
+                        if (p is Electrodomestico)
+                        {
+                            Electrodomestico elect = (Electrodomestico)p;
+                            tipoElectrodomestico = elect.TipoElectrodomestico == "Celular" ? ETipoElectrodomestico.Celular :
+                                elect.TipoElectrodomestico == "Televisor" ? ETipoElectrodomestico.Televisor :
+                                elect.TipoElectrodomestico == "Lavarropa" ? ETipoElectrodomestico.Lavarropa : ETipoElectrodomestico.Heladera;
+                            electrodomestico = new Electrodomestico(elect.Id, elect.Precio, elect.Marca, tipoElectrodomestico);
+                            this.frmVenderProducto = new FrmVenderProducto(electrodomestico);
+                            frmVenderProducto.ShowDialog();
+
+                            if (this.frmVenderProducto.DialogResult == DialogResult.OK)
+                            {
+                                DataGridViewRow row = new DataGridViewRow();
+                                this.Recaudacion += elect.Precio;
+                                lblRecaudacion.Text = $"Recaudacion: ${this.recaudacion}";
+                                this.stock.Productos.Remove(electrodomestico);
+                                dtStock.Rows.Remove(dtStock.CurrentRow);
+                            }
+                            break;
+                        }
+                    }
                 }
-                if (p is Electrodomestico)
-                {
-                    Electrodomestico elect = (Electrodomestico)p;
-                    tipoElectrodomestico = elect.TipoElectrodomestico == "Celular" ? ETipoElectrodomestico.Celular :
-                        elect.TipoElectrodomestico == "Televisor" ? ETipoElectrodomestico.Televisor :
-                        elect.TipoElectrodomestico == "Lavarropa" ? ETipoElectrodomestico.Lavarropa : ETipoElectrodomestico.Heladera;
-                    electrodomestico = new Electrodomestico(elect.Id, elect.Precio, elect.Marca, tipoElectrodomestico);
-                    this.Recaudacion += elect.Precio;
-                    lblRecaudacion.Text = $"Recaudacion: ${this.recaudacion}";
-                    this.stock.Productos.Remove(electrodomestico);
-                    dtStock.Rows.Remove(dtStock.CurrentRow);
-                    break;
-                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
             }
         }
 
@@ -158,6 +214,7 @@ namespace Sistema_de_Stock
         {
             try
             {
+                string mensaje = "";
                 if (this.stock.Productos.Count > 0)
                 {
                     foreach (Producto p in this.stock.Productos)
@@ -171,21 +228,31 @@ namespace Sistema_de_Stock
                             this.listaInstrumentos.Add((Instrumento)p);
                         }
                     }
-                    this.serializadorXmlElectrodomestico.Escribir(this.listaElectrodomesticos, pathXmlElectrodomesticos);
-                    this.serializadorXmlInstrumento.Escribir(this.listaInstrumentos, pathXmlInstrumento);
-                    MessageBox.Show($"Archivos guardados en \n{pathXmlElectrodomesticos}\n{pathXmlInstrumento}");
+
+                    if(this.listaElectrodomesticos.Count > 0)
+                    {
+                        this.serializadorXmlElectrodomestico.Escribir(this.listaElectrodomesticos, pathXmlElectrodomesticos);
+                        mensaje += $"Electrodomesticos guardados en \n{pathXmlElectrodomesticos}\n";
+                    }
+
+                    if(this.listaInstrumentos.Count > 0)
+                    {
+                        this.serializadorXmlInstrumento.Escribir(this.listaInstrumentos, pathXmlInstrumento);
+                        mensaje += $"Instrumentos guardados en \n{pathXmlInstrumento}\n";
+                    }
+                    MessageBox.Show(mensaje);
                 }
                 else
                 {
                     MessageBox.Show("Debe tener al menos un producto ingresado en el stock para poder guardar el archivo", "Error");
                 }
             }
-            catch (Exception exception)
+            catch (Exception ex)
             {
                 string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "error.log");
                 Archivo archivo = new Archivo();
                 MessageBox.Show($"Para ver mas detalles: {path}", "Error");
-                archivo.Escribir($"{exception.Message}", path);
+                archivo.Escribir($"{ex.Message}", path);
             }
         }
 
@@ -193,6 +260,7 @@ namespace Sistema_de_Stock
         {
             try
             {
+                string mensaje = "";
                 if (this.stock.Productos.Count > 0)
                 {
                     foreach (Producto p in this.stock.Productos)
@@ -206,21 +274,31 @@ namespace Sistema_de_Stock
                             this.listaInstrumentos.Add((Instrumento)p);
                         }
                     }
-                    this.serializadorJsonElectrodomestico.Escribir(this.listaElectrodomesticos, pathJsonElectrodomesticos);
-                    this.serializadorJsonInstrumento.Escribir(this.listaInstrumentos, pathJsonInstrumento);
-                    MessageBox.Show($"Archivos guardados en \n{pathJsonElectrodomesticos}\n{pathJsonInstrumento}");
+
+                    if (this.listaElectrodomesticos.Count > 0)
+                    {
+                        this.serializadorJsonElectrodomestico.Escribir(this.listaElectrodomesticos, pathJsonElectrodomesticos);
+                        mensaje += $"Electrodomesticos guardados en \n{pathJsonElectrodomesticos}\n";
+                    }
+
+                    if (this.listaInstrumentos.Count > 0)
+                    {
+                        this.serializadorJsonInstrumento.Escribir(this.listaInstrumentos, pathJsonInstrumento);
+                        mensaje += $"Instrumentos guardados en \n{pathJsonInstrumento}\n";
+                    }
+                    MessageBox.Show(mensaje);
                 }
                 else
                 {
                     MessageBox.Show("Debe tener al menos un producto ingresado en el stock para poder guardar el archivo", "Error");
                 }
             }
-            catch (Exception exception)
+            catch (Exception ex)
             {
                 string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "error.log");
                 Archivo archivo = new Archivo();
                 MessageBox.Show($"Para ver mas detalles: {path}", "Error");
-                archivo.Escribir($"{exception.Message}", path);
+                archivo.Escribir($"{ex.Message}", path);
             }
         }
 
@@ -242,9 +320,9 @@ namespace Sistema_de_Stock
                 Actualizar();
                 MessageBox.Show("Stock cargado correctamente", "Alerta");
             }
-            catch (Exception exception)
+            catch (Exception ex)
             {
-                MessageBox.Show(exception.Message);
+                MessageBox.Show(ex.Message);
             }
         }
         #endregion
@@ -252,11 +330,18 @@ namespace Sistema_de_Stock
         #region Eventos
         private void InitializeDataStock()
         {
-            dtStock.ColumnCount = 4;
-            dtStock.Columns[0].Name = "Id";
-            dtStock.Columns[1].Name = "Marca";
-            dtStock.Columns[2].Name = "Tipo";
-            dtStock.Columns[3].Name = "Precio";
+            try
+            {
+                dtStock.ColumnCount = 4;
+                dtStock.Columns[0].Name = "Id";
+                dtStock.Columns[1].Name = "Marca";
+                dtStock.Columns[2].Name = "Tipo";
+                dtStock.Columns[3].Name = "Precio";
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+            }
         }
 
         private void btnCargarProducto_Click(object sender, EventArgs e)
@@ -270,12 +355,27 @@ namespace Sistema_de_Stock
 
         private void btnEliminarProducto_Click(object sender, EventArgs e)
         {
-            EliminarProducto();
+            if(this.stock.Productos.Count > 0)
+            {
+                EliminarProducto();
+            }
+            else
+            {
+                MessageBox.Show("Debe haber productos en el stock para poder eliminar!","Advertencia");
+            }
         }
 
         private void btnVenderProducto_Click(object sender, EventArgs e)
         {
-            VenderProducto();
+
+            if (this.stock.Productos.Count > 0)
+            {
+                VenderProducto();
+            }
+            else
+            {
+                MessageBox.Show("Debe haber productos en el stock para poder vender!", "Advertencia");
+            }
         }
 
         private void btnGuardarStockXml_Click(object sender, EventArgs e)

@@ -7,9 +7,15 @@
     <TipoElectrodomestico>Celular</TipoElectrodomestico>
   </Electrodomestico>
   <Electrodomestico>
-    <Id>2</Id>
-    <Precio>50000</Precio>
+    <Id>3</Id>
+    <Precio>45000</Precio>
     <Marca>LG</Marca>
     <TipoElectrodomestico>Televisor</TipoElectrodomestico>
+  </Electrodomestico>
+  <Electrodomestico>
+    <Id>4</Id>
+    <Precio>85000</Precio>
+    <Marca>Patrick</Marca>
+    <TipoElectrodomestico>Heladera</TipoElectrodomestico>
   </Electrodomestico>
 </ArrayOfElectrodomestico>

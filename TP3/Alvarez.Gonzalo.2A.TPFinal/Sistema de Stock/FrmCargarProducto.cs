@@ -39,25 +39,51 @@ namespace Sistema_de_Stock
                 string nombre = txtMarca.Text;
                 double precio = double.Parse(txtPrecio.Text);
 
-                if (rbElectrodomestico.Checked)
+                if(rbElectrodomestico.Checked == false && rbInstrumento.Checked == false)
                 {
-                    string tipoElect = cboElectrodomestico.Text;
-                    ETipoElectrodomestico tipoElectrodomestico = tipoElect == "Celular" ? ETipoElectrodomestico.Celular :
-                        tipoElect == "Televisor" ? ETipoElectrodomestico.Televisor : tipoElect == "Lavarropa" ?
-                        ETipoElectrodomestico.Lavarropa : ETipoElectrodomestico.Heladera;
-                    p = new Electrodomestico(id, precio, nombre, tipoElectrodomestico);
+                    throw new ProductoNoSeleccionadoException("Debe seleccionar un producto!"); //Aplico excepcion propia
                 }
-                if (rbInstrumento.Checked)
+                else
                 {
-                    string tipoInst = cboInstrumentos.Text;
-                    ETipoInstrumento tipoInstrumento = tipoInst == "Guitarra" ? ETipoInstrumento.Guitarra : ETipoInstrumento.Saxo;
-                    p = new Instrumento(id, precio, nombre, tipoInstrumento);
+                    foreach (Producto prod in this.stock.Productos)
+                    {
+                        if(prod.Id == id)
+                        {
+                            throw new IdExistenteException("Ese ID ya existe en el sistema!"); //Aplico excepcion propia
+                        }
+                    }
+                    if (rbElectrodomestico.Checked)
+                    {
+                        string tipoElect = cboElectrodomestico.Text;
+                        ETipoElectrodomestico tipoElectrodomestico = tipoElect == "Celular" ? ETipoElectrodomestico.Celular :
+                            tipoElect == "Televisor" ? ETipoElectrodomestico.Televisor : tipoElect == "Lavarropa" ?
+                            ETipoElectrodomestico.Lavarropa : ETipoElectrodomestico.Heladera;
+                        p = new Electrodomestico(id, precio, nombre, tipoElectrodomestico);
+                    }
+                    if (rbInstrumento.Checked)
+                    {
+                        string tipoInst = cboInstrumentos.Text;
+                        ETipoInstrumento tipoInstrumento = tipoInst == "Guitarra" ? ETipoInstrumento.Guitarra : ETipoInstrumento.Saxo;
+                        p = new Instrumento(id, precio, nombre, tipoInstrumento);
+                    }
+                    this.stock += p;
                 }
-                this.stock += p;
             }
-            catch (Exception exception)
+            catch(ProductoNoSeleccionadoException ex)
             {
-                MessageBox.Show(exception.Message, "Error");
+                MessageBox.Show(ex.Message, "Error");
+            }
+            catch(IdExistenteException ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+            }
+            catch(FormatException)
+            {
+                MessageBox.Show("El formato ingresado en alguno de los campos no es el correcto!", "Error");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
             }
             finally
             {

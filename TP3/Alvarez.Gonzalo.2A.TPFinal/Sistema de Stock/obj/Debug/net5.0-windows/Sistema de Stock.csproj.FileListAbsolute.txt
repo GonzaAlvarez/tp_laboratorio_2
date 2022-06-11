@@ -20,3 +20,4 @@ C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonza
 C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\ref\Sistema de Stock.dll
 C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.pdb
 C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.genruntimeconfig.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema_de_Stock.FrmVenderProducto.resources

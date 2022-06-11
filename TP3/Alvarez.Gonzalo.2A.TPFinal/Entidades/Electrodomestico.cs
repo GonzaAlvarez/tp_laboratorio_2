@@ -60,7 +60,7 @@ namespace Entidades
         private string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"{base.ToString()}\t\t\t{this.tipoElectrodomestico}");
+            sb.Append($"{base.ToString()}Tipo Electrodomestico: {this.TipoElectrodomestico}");
             return sb.ToString();
         }
         #endregion

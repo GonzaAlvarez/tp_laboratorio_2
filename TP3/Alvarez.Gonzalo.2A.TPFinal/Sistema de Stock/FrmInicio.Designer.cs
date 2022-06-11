@@ -53,7 +53,7 @@ namespace Sistema_de_Stock
             // 
             // btnVenderProducto
             // 
-            this.btnVenderProducto.Location = new System.Drawing.Point(12, 93);
+            this.btnVenderProducto.Location = new System.Drawing.Point(12, 94);
             this.btnVenderProducto.Name = "btnVenderProducto";
             this.btnVenderProducto.Size = new System.Drawing.Size(123, 35);
             this.btnVenderProducto.TabIndex = 17;

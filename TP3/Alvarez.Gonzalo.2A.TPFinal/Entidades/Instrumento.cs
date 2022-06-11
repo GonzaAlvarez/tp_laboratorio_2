@@ -17,11 +17,11 @@ namespace Entidades
         {
             get
             {
-                return this.tipoInstrumento == ETipoInstrumento.Guitarra ? "Guitarra" : "Sazo";
+                return this.tipoInstrumento == ETipoInstrumento.Guitarra ? "Guitarra" : "Saxo";
             }
             set
             {
-                this.tipoInstrumento = value == "Viento" ? ETipoInstrumento.Saxo : ETipoInstrumento.Guitarra;
+                this.tipoInstrumento = value == "Saxo" ? ETipoInstrumento.Saxo : ETipoInstrumento.Guitarra;
             }
         }
         #endregion
@@ -54,7 +54,7 @@ namespace Entidades
         private string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"{base.ToString()}\t\t\t{this.TipoInstrumento}");
+            sb.Append($"{base.ToString()}Tipo Instrumento: {this.TipoInstrumento}");
             return sb.ToString();
         }
         #endregion
@@ -95,11 +95,6 @@ namespace Entidades
         public override string ToString()
         {
             return this.Mostrar();
-        }
-
-        public override bool Equals(object obj)
-        {
-            return (Instrumento)obj == this;
         }
         #endregion
     }

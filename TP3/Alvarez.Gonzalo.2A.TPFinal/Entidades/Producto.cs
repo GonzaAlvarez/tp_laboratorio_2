@@ -90,7 +90,9 @@ namespace Entidades
         private static string Mostrar(Producto p)
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"{p.id}\t\t\t{p.marca}\t\t\t${p.precio}");
+            sb.AppendLine($"ID: {p.id}");
+            sb.AppendLine($"Marca: {p.marca}");
+            sb.AppendLine($"Precio: ${p.precio}");
             return sb.ToString();
         }
         #endregion
