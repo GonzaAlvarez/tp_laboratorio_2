@@ -1,0 +1,53 @@
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.exe
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.deps.json
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.runtimeconfig.json
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.runtimeconfig.dev.json
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\ref\Sistema de Stock.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.pdb
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.csproj.AssemblyReference.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema_de_Stock.FrmCargarProducto.resources
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema_de_Stock.FrmInicio.resources
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.csproj.GenerateResource.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.AssemblyInfoInputs.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.AssemblyInfo.cs
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.csproj.CoreCompileInputs.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.csproj.CopyComplete
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\ref\Sistema de Stock.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.pdb
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.genruntimeconfig.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP3\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema_de_Stock.FrmVenderProducto.resources
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.exe
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.deps.json
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.runtimeconfig.json
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.runtimeconfig.dev.json
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\ref\Sistema de Stock.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Sistema de Stock.pdb
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.csproj.AssemblyReference.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema_de_Stock.FrmCargarProducto.resources
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema_de_Stock.FrmInicio.resources
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema_de_Stock.FrmVenderProducto.resources
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.csproj.GenerateResource.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.AssemblyInfoInputs.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.AssemblyInfo.cs
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.csproj.CoreCompileInputs.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.csproj.CopyComplete
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\ref\Sistema de Stock.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.pdb
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema de Stock.genruntimeconfig.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\obj\Debug\net5.0-windows\Sistema_de_Stock.FrmClientes.resources

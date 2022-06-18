@@ -1,0 +1,7 @@
+The process cannot access the file 'C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Sistema de Stock\bin\Debug\net5.0-windows\stockElectrodomesticos.xml' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Xml.XmlTextWriter..ctor(String filename, Encoding encoding)
+   at Entidades.SerializadorXML_JSON`1.Escribir(T dato, String path) in C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP4\Alvarez.Gonzalo.2A.TPFinal\Entidades\SerializadorXML_JSON.cs:line 45
