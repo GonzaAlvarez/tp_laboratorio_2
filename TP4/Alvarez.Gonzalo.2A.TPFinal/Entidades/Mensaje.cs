@@ -22,17 +22,7 @@ namespace Entidades
         /// Propiedad Contenido, retorna un string dependiendo el valor del atributo contenido
         /// o asigna un valor a dicho atributo
         /// </summary>
-        public string Contenido
-        {
-            get
-            {
-                return this.contenido;
-            }
-            set
-            {
-                this.contenido = value;
-            }
-        }
+        public string Contenido { get => this.contenido; set => this.contenido = value; }
         #endregion
 
         #region Constructores

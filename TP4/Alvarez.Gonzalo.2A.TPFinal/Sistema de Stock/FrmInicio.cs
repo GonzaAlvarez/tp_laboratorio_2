@@ -51,17 +51,7 @@ namespace Sistema_de_Stock
         #endregion
 
         #region Propiedades
-        public double Recaudacion
-        {
-            get
-            {
-                return this.recaudacion;
-            }
-            set
-            {
-                this.recaudacion = value;
-            }
-        }
+        public double Recaudacion { get => this.recaudacion; set => this.recaudacion = value; }
         #endregion
 
         #region Metodos

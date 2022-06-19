@@ -15,14 +15,8 @@ namespace Entidades
         /// </summary>
         public string TipoInstrumento
         {
-            get
-            {
-                return this.tipoInstrumento == ETipoInstrumento.Guitarra ? "Guitarra" : "Saxo";
-            }
-            set
-            {
-                this.tipoInstrumento = value == "Saxo" ? ETipoInstrumento.Saxo : ETipoInstrumento.Guitarra;
-            }
+            get => this.tipoInstrumento == ETipoInstrumento.Guitarra ? "Guitarra" : "Saxo";
+            set => this.tipoInstrumento = value == "Saxo" ? ETipoInstrumento.Saxo : ETipoInstrumento.Guitarra;
         }
         #endregion
 

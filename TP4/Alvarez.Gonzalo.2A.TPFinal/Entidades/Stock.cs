@@ -17,17 +17,7 @@ namespace Entidades
         /// <summary>
         /// Propiedad Productos, devuelve una lista de productos.
         /// </summary>
-        public List<T> Productos
-        {
-            get
-            {
-                return this.stock;
-            }
-            set
-            {
-                this.stock = value;
-            }
-        }
+        public List<T> Productos { get => this.stock; set => this.stock = value; }
         #endregion
 
         #region Constructores

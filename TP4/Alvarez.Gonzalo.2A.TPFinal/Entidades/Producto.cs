@@ -18,47 +18,17 @@ namespace Entidades
         /// <summary>
         /// Propiedad Id, devuelve el valor del atributo id
         /// </summary>
-        public int Id
-        {
-            get
-            {
-                return this.id;
-            }
-            set
-            {
-                this.id = value;
-            }
-        }
+        public int Id { get => this.id; set => this.id = value; }
 
         /// <summary>
         /// Propiedad Precio, devuelve el valor del atributo precio
         /// </summary>
-        public double Precio
-        {
-            get
-            {
-                return this.precio;
-            }
-            set
-            {
-                this.precio = value;
-            }
-        }
+        public double Precio { get => this.precio; set => this.precio = value; }
 
         /// <summary>
         /// Propiedad Marca, devuelve el valor del atributo marca
         /// </summary>
-        public string Marca
-        {
-            get
-            {
-                return this.marca;
-            }
-            set
-            {
-                this.marca = value;
-            }
-        }
+        public string Marca { get => this.marca; set => this.marca = value; }
         #endregion
 
         #region Constructores

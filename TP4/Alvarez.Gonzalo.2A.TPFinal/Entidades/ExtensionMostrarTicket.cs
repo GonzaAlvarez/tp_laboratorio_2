@@ -8,6 +8,7 @@ namespace Entidades
 {
     public static class ExtensionMostrarTicket
     {
+        #region Metodos
         /// <summary>
         /// Modifica el metodo ToString() para mostrarlo de una mejor manera
         /// al crear el ticket
@@ -25,5 +26,6 @@ namespace Entidades
 
             return sb.ToString();
         }
+        #endregion
     }
 }

@@ -18,17 +18,12 @@ namespace Entidades
         /// </summary>
         public string TipoElectrodomestico
         {
-            get
-            {
-                return this.tipoElectrodomestico.ToString();
-            }
-            set
-            {
-                this.tipoElectrodomestico = value == "Celular" ? ETipoElectrodomestico.Celular
-                                          : value == "Televisor" ? ETipoElectrodomestico.Televisor 
-                                          : value == "Lavarropa" ? ETipoElectrodomestico.Lavarropa 
-                                          : ETipoElectrodomestico.Heladera;
-            }
+            get => this.tipoElectrodomestico.ToString();
+            set => this.tipoElectrodomestico = 
+                value == "Celular" ? ETipoElectrodomestico.Celular :
+                value == "Televisor" ? ETipoElectrodomestico.Televisor :
+                value == "Lavarropa" ? ETipoElectrodomestico.Lavarropa :
+                                       ETipoElectrodomestico.Heladera;
         }
         #endregion
 

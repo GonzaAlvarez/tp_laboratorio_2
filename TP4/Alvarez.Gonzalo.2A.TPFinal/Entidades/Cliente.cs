@@ -19,35 +19,17 @@ namespace Entidades
         /// <summary>
         /// Propiedad Id, Devuelve el valor del atributo id
         /// </summary>
-        public int Id
-        {
-            get
-            {
-                return this.id;
-            }
-        }
+        public int Id { get => this.id; }
 
         /// <summary>
         /// Propiedad Nombre, Devuelve el valor del atributo nombre
         /// </summary>
-        public string Nombre
-        {
-            get
-            {
-                return this.nombre;
-            }
-        }
+        public string Nombre { get => this.nombre; }
 
         /// <summary>
         /// Propiedad Apellido, Devuelve el valor del atributo apellido
         /// </summary>
-        public string Apellido
-        {
-            get
-            {
-                return this.apellido;
-            }
-        }
+        public string Apellido { get => this.apellido; }
         #endregion
 
         #region Constructores
