@@ -8,14 +8,14 @@ namespace Entidades
 {
     public class Ciclomotor : Vehiculo
     {
-        #region "Constructores"
+        #region Constructores
         public Ciclomotor(EMarca marca, string chasis, ConsoleColor color) :base(chasis, marca, color)
         {
 
         }
         #endregion
 
-        #region "Propiedades"
+        #region Propiedades
         /// <summary>
         /// Ciclomotor son 'Chico'
         /// </summary>
@@ -32,7 +32,7 @@ namespace Entidades
         }
         #endregion
 
-        #region "Metodos"
+        #region Metodos
         /// <summary>
         /// Muestra los datos de Ciclomotor
         /// </summary>

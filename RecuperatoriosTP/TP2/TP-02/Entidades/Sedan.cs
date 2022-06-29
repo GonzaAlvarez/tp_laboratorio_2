@@ -9,18 +9,18 @@ namespace Entidades
 {
     public class Sedan : Vehiculo
     {
-        #region "Enumerados"
+        #region Enumerados
         public enum ETipo 
         {
            CuatroPuertas, CincoPuertas 
         }
         #endregion
 
-        #region "Atributos"
+        #region Atributos
         ETipo tipo;
         #endregion
 
-        #region "Constructores"
+        #region Constructores
         /// <summary>
         /// Por defecto, TIPO será CuatroPuertas
         /// </summary>
@@ -38,7 +38,7 @@ namespace Entidades
         }
         #endregion
 
-        #region "Propiedades"
+        #region Propiedades
         /// <summary>
         /// Sedan son 'Mediano'
         /// </summary>
@@ -55,7 +55,7 @@ namespace Entidades
         }
         #endregion
 
-        #region "Metodos"
+        #region Metodos
         /// <summary>
         /// Muestra los datos de Sedan
         /// </summary>

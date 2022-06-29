@@ -8,14 +8,14 @@ namespace Entidades
 {
     public class Suv : Vehiculo
     {
-        #region "Constructores"
+        #region Constructores
         public Suv(EMarca marca, string chasis, ConsoleColor color) : base(chasis, marca, color)
         {
 
         }
         #endregion
 
-        #region "Propiedades"
+        #region Propiedades
         /// <summary>
         /// SUV son 'Grande'
         /// </summary>
@@ -32,7 +32,7 @@ namespace Entidades
         }
         #endregion
 
-        #region "Metodos"
+        #region Metodos
         /// <summary>
         /// Muestra los datos de SUV
         /// </summary>

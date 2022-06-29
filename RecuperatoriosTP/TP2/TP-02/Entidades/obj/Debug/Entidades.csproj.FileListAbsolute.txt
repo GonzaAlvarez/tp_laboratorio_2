@@ -23,3 +23,9 @@ C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP2\TP-02\Entidad
 C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP2\TP-02\Entidades\obj\Debug\Entidades.dll
 C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\TP2\TP-02\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\recuperatorio-fecha-finales\TP2\TP-02\Entidades\bin\Debug\Entidades.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\recuperatorio-fecha-finales\TP2\TP-02\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\recuperatorio-fecha-finales\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\recuperatorio-fecha-finales\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\recuperatorio-fecha-finales\TP2\TP-02\Entidades\obj\Debug\Entidades.dll
+C:\Users\Gonza\Desktop\UTN\Segundo Cuatrimestre\Laboratorio II\recuperatorio-fecha-finales\TP2\TP-02\Entidades\obj\Debug\Entidades.pdb
